@@ -1,70 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+  <head>
+    <!-- This title is used for tabs and bookmarks -->
+    <title>Experiment 2 - Yosemite Living Impression</title>
 
-	<!-- Use UTF character set, a good idea with any webpage -->
-	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Include CSS file, including a site-wide CSS and for this particular page -->
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Include CSS file, including a site-wide CSS and for this particular page -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-	<!-- Load jQuery library -->
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        crossorigin="anonymous"></script>
-	<!-- Load p5.js library -->
-	<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+    <!-- Load jQuery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Load p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
 
-	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
-    <script type="text/javascript" src="../js/site.js" DEFER></script>
-	<!-- Use me for a JavaScript OOP Project -->
-	<script type="text/javascript" src="./js/project.js" DEFER></script>
-	<!-- Use me for a p5.js project -->
-	<script type="text/javascript" src="./js/sketch.js" DEFER></script>
-</head>
-<body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
-	<main id="content">
-		<section>
+    <!-- Link to javascript files - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="../js/site.js" defer></script>
+    <!-- Use me for a JavaScript OOP Project -->
+    <script type="text/javascript" src="./js/project.js" defer></script>
+    <!-- Use me for a p5.js project -->
+    <script type="text/javascript" src="./js/sketch.js" defer></script>
+  </head>
+  <body>
+    <!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
+    <main id="content">
+      <section>
+        <h1>Experiment 2 - Yosemite Living Impression</h1>
 
-			<h1>Experiment X - Subject/Topic</h1>
+        <div class="minor-section">
+          <div id="canvas-container">
+            <!-- canvas will be added here -->
+          </div>
+          <div class="fullscreen-box">
+            <button id="fullscreen">Fullscreen</button>
+          </div>
+        </div>
 
-			<div class="minor-section">
-				<div id="canvas-container">
-					<!-- canvas will be added here -->
-				</div>
-                <div class="fullscreen-box">
-                    <button id="fullscreen">Fullscreen</button>
-                </div>
-			</div>
+        <div class="minor-section">
+          <h2>Description</h2>
+          <p>
+            This experiement attempts to make a landscape reminiscient of
+            Yosemite National Park. Last summer I went to the park with my best
+            friend and younger brother, and I loved the beauty and tranquility
+            of the park, especially at night. I tried to capture some of that
+            peacefulness here.
+          </p>
+          <a
+            href="https://www.yosemitethisyear.com/a-guide-to-yosemites-waterfalls"
+            target="_blank"
+            >Image inspiration</a
+          >
+        </div>
 
-			<div class="minor-section">
-				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
-			</div>
+        <div class="minor-section">
+          <h2>Technical</h2>
+          <p>
+            Utilizing p5.js, this experiment creates various landscapes using
+            the built in noise function. This function creates values similar to
+            the one before it, allowing for a more smooth surface for the
+            mountain ranges as well as the water. The stars and trees are made
+            using a classes that randomly place them at the the start of the
+            program. There's also a slight bit of movement with the water, which
+            moves with the frame count. There is also a chance to see shooting
+            stars in the night sky if you look long enough!
+          </p>
+        </div>
 
-			<div class="minor-section">
-				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
-			</div>
-
-			<div class="minor-section">
-				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
-			</div>
-
-		</section>
-		<nav id="links" class="minor-section">
-			<!-- Put link back to homepage here. -->
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-            </ul>
-		</nav>
-	</main>
-</body>
+        <div class="minor-section">
+          <h2>Reflection</h2>
+          <p>
+            One of the tougher challenges I encountered during this experiment
+            was with the mountain generation. I wanted to create two layers of
+            mountains, with the one in the foreground being narrow enough so
+            that the background mountains could be seen. I was able to find a
+            way to have the foreground mountains slope downward about a third of
+            the way through the page, although if you look closely you can see
+            the slope is a bit too jagged. That being said I still like the way
+            the mountains turned out. I also am happy with the way the night sky
+            turned out. Originally I was planning on having the landscape take
+            place during the day, but I decided to add some detail to the sky by
+            making it night. This also gave me the opportunity to add the
+            shooting stars, which I'm happy with. The water also turned out
+            rather nicely, though I think I could've added more detail like
+            light reflection to it. I think the least successful part of this
+            experiment were the trees. I didn't really know the best way to add
+            trees to the scene, so I just tried to add them in the transition
+            from the grass areas the mountain range. But Yosemite has a lot of
+            trees both on the mountains and the area by the water, so the lack
+            of trees makes it less recognizable as Yosemite and more broad
+            Sierra Nevada. I also wanted to add a waterfall to the mountain
+            range on the left side, but I couldn't figure out how to make
+            flowing water look good on the mountain range, especially since it
+            generates differently depending on the seed so the waterfall would
+            probably have to be placed somewhere differently every time.
+          </p>
+        </div>
+      </section>
+      <nav id="links" class="minor-section">
+        <!-- Put link back to homepage here. -->
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </main>
+  </body>
 </html>
