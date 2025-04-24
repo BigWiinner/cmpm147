@@ -2,18 +2,6 @@
 
 /* global generateGrid drawGrid */
 
-let m = function (p) {
-  p.setup = setup;
-  p.draw = draw;
-};
-var myp5 = new p5(m, "canvasContainer");
-
-let d = function (p) {
-  p.setup = setup;
-  p.draw = draw;
-};
-var myp5_2 = new p5(d, "canvasContainer");
-
 let seed = 0;
 let tilesetImage;
 let currentGrid = [];
